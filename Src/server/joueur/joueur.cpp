@@ -19,7 +19,7 @@
 
 vector<string> joueur::takeWords(){
 	vector<string> liste;
-	ifstream fichier("Src/server/word");
+	ifstream fichier("Src/server/words");
 
 	string ligne;
 	int compteur = 0;
