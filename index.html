@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Hangmansocket by miagebdx</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Hangmansocket</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/miagebdx/hangmanSocket/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/miagebdx/hangmanSocket/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/miagebdx/hangmanSocket" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p><img src="https://raw.githubusercontent.com/miagebdx/hangmanSocket/master/screen.png" alt="screen"></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ul>
+<li>build app : <code>make all</code>
+</li>
+<li>launch server : <code>./server 8888</code>
+</li>
+<li>launch client : <code>./client localhost 8888</code>
+</li>
+</ul><h2>
+<a name="sujet" class="anchor" href="#sujet"><span class="octicon octicon-link"></span></a>Sujet</h2>
+
+<p>Création d'un pendu avec l'utilisation de la classe Socket.</p>
+
+<h2>
+<a name="environnement" class="anchor" href="#environnement"><span class="octicon octicon-link"></span></a>Environnement</h2>
+
+<p>GNU/Linux, Sublime Text</p>
+
+<h2>
+<a name="le-pendu" class="anchor" href="#le-pendu"><span class="octicon octicon-link"></span></a>Le pendu</h2>
+
+<p>Nous voulions un pendu entièrement jouable en réseaux. Le serveur est lancé par l’hôte de la partie. Ensuite plusieurs clients peuvent se connecter sur celui-ci pour entamer une partie. </p>
+
+<p>Pour cela nous avons implémenter une classe joueur, qui permet d'avoir un nombre de joueur dynamique sur notre serveur et ainsi avoir plusieurs jeux en cours.</p>
+
+<div class="highlight highlight-C++"><pre>    <span class="k">class</span> <span class="nc">joueur</span>
+    <span class="p">{</span>
+    <span class="nl">public:</span>
+        <span class="n">joueur</span><span class="p">();</span>
+        <span class="o">~</span><span class="n">joueur</span><span class="p">(){};</span>
+        <span class="kt">void</span> <span class="nf">setLetterList</span><span class="p">(</span><span class="n">string</span> <span class="n">_letter</span><span class="p">);</span>
+        <span class="n">string</span> <span class="nf">getLetterList</span><span class="p">();</span>
+        <span class="n">string</span> <span class="nf">getWord</span><span class="p">();</span>
+        <span class="kt">void</span> <span class="nf">setBlank</span><span class="p">(</span><span class="n">string</span> <span class="n">blankWord</span><span class="p">);</span>
+        <span class="n">string</span> <span class="nf">getBlank</span><span class="p">();</span>
+        <span class="n">string</span> <span class="nf">actionBlankWord</span><span class="p">(</span><span class="n">string</span> <span class="n">wordBlank</span><span class="p">,</span> <span class="n">string</span> <span class="n">letterUti</span><span class="p">);</span>
+
+
+    <span class="nl">protected:</span>
+        <span class="n">string</span> <span class="n">word</span><span class="p">;</span>
+        <span class="n">string</span> <span class="n">letterList</span><span class="p">;</span>
+        <span class="n">string</span> <span class="n">blank</span><span class="p">;</span>
+
+
+    <span class="p">};</span>
+</pre></div>
+
+<h3>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h3>
+
+<p>Mail : <a href="mailto:jer.morin@free.fr">jer.morin@free.fr</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
