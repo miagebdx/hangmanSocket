@@ -1,2 +1,4 @@
 hangmanSocket
 =============
+
+C++ Hangman Socket
