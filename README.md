@@ -3,7 +3,7 @@ hangmanSocket
 
 Client/Server hangman written in C++ using the `Socket` library
 
-![alt tag](https://raw.githubusercontent.com/miagebdx/hangmanSocket/master/screen.png)
+![alt tag](https://raw.githubusercontent.com/miagebdx/hangmanSocket/gh-pages/images/screen.png)
 
 # Build
 
