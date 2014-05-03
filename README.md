@@ -1,24 +1,24 @@
-hangmanSocket
-=============
+![screen](https://raw.githubusercontent.com/miagebdx/hangmanSocket/gh-pages/images/screen.png)
 
-Client/Server hangman written in C++ using the `Socket` library
 
-![alt tag](https://raw.githubusercontent.com/miagebdx/hangmanSocket/gh-pages/images/screen.png)
+##Usage
 
-# Build
+- git : `git clone https://github.com/miagebdx/hangmanSocket` or [Download here](https://github.com/miagebdx/hangmanSocket/tarball/master)
+- build app : `make all`
+- launch server : `./server 8888`
+- launch client : `./client localhost 8888`
 
-```bash
+### Report
 
-make all 
+You can download report [here](https://github.com/miagebdx/hangmanSocket/raw/gh-pages/images/rapport.pdf)
+. Made with LaTex and MarkDown
 
-./server <port>
+### Requirement
 
-./client <ip_server> <port>
+- G++
+- GNU/Linux `<3`
 
-```
 
-# Requirements 
+###Contact 
 
-1. Unix system 
-2. g++
-
+Mail : jer.morin@free.fr
